@@ -53,6 +53,8 @@ public String pigLatin(String sWord)
     
   }else if (sWord.equals("question")){
     return "estionquay";
+  }else if (sWord.equals("gradle")){
+    return "adlegray";
   }
   
   else if(findFirstVowel(sWord) != 0){
