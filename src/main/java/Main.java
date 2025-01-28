@@ -51,10 +51,10 @@ public String pigLatin(String sWord)
   else if(findFirstVowel(sWord) == 0){
     return sWord + "way";
     
-  }else if (sWord.equals("question")){
-    return "estionquay";
-  }else if (sWord.equals("gradle")){
-    return "adlegray";
+  }else if (sWord.substring(0,2).equals("qu")){
+    rest = sWord.substring(findFirstVowel(sWord));
+    firstletter = sWord.substring(0,findFirstVowel(sWord)+1);
+    return rest+firstletter+"ay";
   }
   
   else if(findFirstVowel(sWord) != 0){
